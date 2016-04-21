@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="amazingSales">
+<head>
+    <title>{{welcome}}</title>
+    <meta charset="utf-8" />
+    <link href="AngularApp/content/css/bootstrap.css" rel="stylesheet" />
+    <link href="AngularApp/content/css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="AngularApp/vendor/jquery-2.2.0.js"></script>
+    <script src="AngularApp/vendor/bootstrap.js"></script>
+    <script src="AngularApp/vendor/angular.min.js"></script>
+</head>
+<body>
+    <div class="contanier" >
+        <div class="col-xs-4" >
+            <input type="text"
+                    class="form-control"
+                    ng-model="welcome" />
+            <h1>{{welcome}}</h1>
+        </div>
+        <div class="col-xs-4">
+            <input type="text"
+                   class="form-control"
+                   ng-model="welcome" />
+            <h1 ng-bind="welcome"></h1>
+        </div>
+        <h1>{{121122+welcome}}</h1>
+    </div>
+    <script src="AngularApp/app/app.js"></script>
+</body>
+</html>
