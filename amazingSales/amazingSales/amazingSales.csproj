@@ -249,6 +249,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AngularApp\app\app.js" />
+    <Content Include="AngularApp\app\cart\cart.js" />
+    <Content Include="AngularApp\app\home\home.js" />
+    <Content Include="AngularApp\app\home\homeCtrl.js" />
+    <Content Include="AngularApp\app\login\login.js" />
+    <Content Include="AngularApp\app\register\register.js" />
     <Content Include="AngularApp\content\css\bootstrap-theme.css" />
     <Content Include="AngularApp\content\css\bootstrap-theme.min.css" />
     <Content Include="AngularApp\content\css\bootstrap.css" />
@@ -326,10 +331,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AngularApp\app\cart\" />
-    <Folder Include="AngularApp\app\home\" />
-    <Folder Include="AngularApp\app\login\" />
-    <Folder Include="AngularApp\app\register\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

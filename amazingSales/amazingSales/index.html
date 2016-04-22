@@ -10,21 +10,21 @@
     <script src="AngularApp/vendor/angular.min.js"></script>
 </head>
 <body>
-    <div class="contanier" >
-        <div class="col-xs-4" >
-            <input type="text"
-                    class="form-control"
-                    ng-model="welcome" />
-            <h1>{{welcome}}</h1>
+    <div class="contanier" ng-controller="homeCtrl">
+        <div class="well-sm" >
+            <h1 ng-bind="title"></h1>
+            <input ng-model="name"/>
         </div>
-        <div class="col-xs-4">
-            <input type="text"
-                   class="form-control"
-                   ng-model="welcome" />
-            <h1 ng-bind="welcome"></h1>
-        </div>
-        <h1>{{121122+welcome}}</h1>
+        <button class="btn btn-info" ng-click="clickMe()">Click me</button>
     </div>
+
+    <script src="AngularApp/app/cart/cart.js"></script>
+    <!--home module-->
+    <script src="AngularApp/app/home/home.js"></script>
+    <script src="AngularApp/app/home/homeCtrl.js"></script>
+    <!--end of home module-->
+    <script src="AngularApp/app/login/login.js"></script>
+    <script src="AngularApp/app/register/register.js"></script>
     <script src="AngularApp/app/app.js"></script>
 </body>
 </html>
