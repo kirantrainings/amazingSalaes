@@ -11,3 +11,6 @@
     angular.module('amazingSales.home')
            .controller("homeCtrl", ["$scope",homeCtrl]);
 })();
+
+//in this example homeCtrl is dependent
+//$scope is a service 

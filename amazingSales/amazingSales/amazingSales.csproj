@@ -251,9 +251,17 @@
     <Content Include="AngularApp\app\app.js" />
     <Content Include="AngularApp\app\cart\cart.js" />
     <Content Include="AngularApp\app\home\home.js" />
+    <Content Include="AngularApp\app\home\home.tpl.html" />
     <Content Include="AngularApp\app\home\homeCtrl.js" />
     <Content Include="AngularApp\app\login\login.js" />
+    <Content Include="AngularApp\app\login\login.tpl.html" />
+    <Content Include="AngularApp\app\login\loginCtrl.js" />
+    <Content Include="AngularApp\app\main\mainCtrl.js" />
+    <Content Include="AngularApp\app\main\navbar.tpl.html" />
     <Content Include="AngularApp\app\register\register.js" />
+    <Content Include="AngularApp\app\sections\apparels.tpl.html" />
+    <Content Include="AngularApp\app\sections\appliance.tpl.html" />
+    <Content Include="AngularApp\app\sections\gadgets.tpl.html" />
     <Content Include="AngularApp\content\css\bootstrap-theme.css" />
     <Content Include="AngularApp\content\css\bootstrap-theme.min.css" />
     <Content Include="AngularApp\content\css\bootstrap.css" />
