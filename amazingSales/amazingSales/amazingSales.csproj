@@ -250,6 +250,12 @@
   <ItemGroup>
     <Content Include="AngularApp\app\app.js" />
     <Content Include="AngularApp\app\cart\cart.js" />
+    <Content Include="AngularApp\app\common\common.js" />
+    <Content Include="AngularApp\app\common\productSvc.js" />
+    <Content Include="AngularApp\app\gadgets\gadgets.js" />
+    <Content Include="AngularApp\app\gadgets\gadgetsCtrl.js" />
+    <Content Include="AngularApp\app\gadgets\gadgets.tpl.html" />
+    <Content Include="AngularApp\app\gadgets\gadgetSvc.js" />
     <Content Include="AngularApp\app\home\home.js" />
     <Content Include="AngularApp\app\home\home.tpl.html" />
     <Content Include="AngularApp\app\home\homeCtrl.js" />
@@ -273,10 +279,16 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="images\1.jpg" />
+    <Content Include="img\image1.jpg" />
+    <Content Include="img\image2.jpg" />
+    <Content Include="img\image3.jpg" />
+    <Content Include="img\image4.jpg" />
+    <Content Include="img\image5.jpg" />
     <Content Include="index.html" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />

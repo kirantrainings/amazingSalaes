@@ -5,10 +5,13 @@
 //"amazingSales home and login are service or objects
 angular.module("amazingSales",
     [
+        "amazingSales.common",
 "amazingSales.home",
 "amazingSales.login",
 "amazingSales.register",
-"amazingSales.cart"
+"amazingSales.cart",
+"amazingSales.gadgets"
+
 ]);
 
 angular.module("amazingSales")
