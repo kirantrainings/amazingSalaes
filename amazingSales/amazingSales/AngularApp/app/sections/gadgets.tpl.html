@@ -2,19 +2,21 @@
     <div class="row" ng-controller="gadgetsCtrl">
         <div class="col-xs-4" ng-repeat="item in gadgets">
             <div class="thumbnail">
-                <img src="{{item.imgurl}}" class="gadget-img" alt="Sample Image">
+                <img src="{{item.ImageUrl}}" class="gadget-img" alt="Sample Image">
                 <div class="caption">
-                    <h3>{{item.name}}</h3>
-                    <h4>Price : ${{item.price}}</h4>
-                    <h4>Discount:{{item.discount.percentage+"%"}}</h4>
-                    <h4>Specification: ${{item.specification}}</h4>
+                    <h3>{{item.Name}}</h3>
+                    <h4>Price : ${{item.Price}}</h4>
+                    <h4>Discount:{{item.Discount.percentage+"%"}}</h4>
+                    <h4>Specification: ${{item.Specification}}</h4>
                   
                     <p ng-show="item.more.flag">
-                        {{item.description}}
+                        {{item.Description}}
                     </p>
                     <button class="btn btn-primary" ng-click="displayContent(item)">{{item.more.name}}</a>
                 </div>
             </div>
         </div>
+
+        <pre>{{gadgets|json}}</pre>
     </div>
 </div>

@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    var gadgetSvc = function (productSvc) {
+    var gadgetSvc = function (productSvc,$http) {
 
         this.getGadgetsWithDiscount = function () {
             angular.forEach(gadgets, function (item) {
@@ -9,6 +9,10 @@
             });
             console.log(gadgets);
             return gadgets
+        };
+        
+        this.getGadgetsFromApi = function () {
+            return $http.get("api/product");
         }
        var gadgets= [
 				{
@@ -47,7 +51,7 @@
         ];
     };
     angular.module('amazingSales.gadgets')
-        .service("gadgetSvc", ["productSvc", gadgetSvc]);
+        .service("gadgetSvc", ["productSvc","$http", gadgetSvc]);
 
 })();
 // Services are constructor functions

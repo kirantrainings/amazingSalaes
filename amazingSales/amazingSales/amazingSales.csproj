@@ -235,6 +235,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -242,6 +243,7 @@
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -254,7 +256,6 @@
     <Content Include="AngularApp\app\common\productSvc.js" />
     <Content Include="AngularApp\app\gadgets\gadgets.js" />
     <Content Include="AngularApp\app\gadgets\gadgetsCtrl.js" />
-    <Content Include="AngularApp\app\gadgets\gadgets.tpl.html" />
     <Content Include="AngularApp\app\gadgets\gadgetSvc.js" />
     <Content Include="AngularApp\app\home\home.js" />
     <Content Include="AngularApp\app\home\home.tpl.html" />
