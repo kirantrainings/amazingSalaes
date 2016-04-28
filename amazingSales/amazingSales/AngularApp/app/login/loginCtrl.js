@@ -3,13 +3,12 @@
     var loginCtrl = function ($scope) {
         function init(){
             $scope.login = {
-                username: "",
-                password: "",
-                rememberMe: false
+                UserName: "",
+                Password: "",
             };
         }
         $scope.loginUser = function () {
-            console.log($scope.login);
+           
         };
 
         init();

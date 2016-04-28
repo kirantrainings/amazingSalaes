@@ -1,8 +1,9 @@
 ﻿(function () {
     'use strict';
 
-    var gadgetSvc = function (productSvc,$http) {
+    var gadgetSvc = function (productSvc,$http,$q) {
 
+        var myGadgets = "";
         this.getGadgetsWithDiscount = function () {
             angular.forEach(gadgets, function (item) {
                 item.discount = productSvc.getDiscounts(item);
@@ -11,9 +12,34 @@
             return gadgets
         };
         
+        //this.getGadgetsFromApi = function () {
+        //    return $http.get("api/product");
+        //};
+
         this.getGadgetsFromApi = function () {
-            return $http.get("api/product");
-        }
+            //1. create a deffered Object
+            var dfd = $q.defer();
+
+            if (myGadgets) {
+                dfd.resolve(myGadgets);
+            }
+            else {
+                $http.get("api/product")
+                    .then(function (response) {
+                        //positive response
+                        myGadgets = response;
+                        //Step3
+                        dfd.resolve(myGadgets);
+
+                    }).catch(function (errorResponse) {
+                        //negative response
+                        //step 4
+                        dfd.reject(errorResponse);
+                    });
+            }
+            //step 2
+            return dfd.promise;
+        };
        var gadgets= [
 				{
 				    name: "Galaxy S7",
@@ -51,7 +77,8 @@
         ];
     };
     angular.module('amazingSales.gadgets')
-        .service("gadgetSvc", ["productSvc","$http", gadgetSvc]);
+        .service("gadgetSvc", ["productSvc", "$http", "$q",
+            gadgetSvc]);
 
 })();
 // Services are constructor functions
