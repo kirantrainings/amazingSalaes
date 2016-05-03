@@ -1,6 +1,6 @@
 ﻿(function () {
     'use strict';
-    var loginCtrl = function ($scope) {
+    var loginCtrl = function ($scope,loginSvc) {
         function init(){
             $scope.login = {
                 UserName: "",
@@ -8,13 +8,20 @@
             };
         }
         $scope.loginUser = function () {
-           
+            loginSvc.authenticateUser($scope.login)
+                   .then(function (response) {
+                       console.log(response);
+                   })
+                   .catch(function (response) {
+                       console.log(response);
+                   });
         };
 
         init();
     };
     angular.module('amazingSales.login')
-           .controller("loginCtrl", ["$scope", loginCtrl]);
+           .controller("loginCtrl", ["$scope", "loginSvc",
+               loginCtrl]);
 })();
 
 //in this example homeCtrl is dependent

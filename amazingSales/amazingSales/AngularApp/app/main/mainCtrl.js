@@ -17,6 +17,9 @@
         $scope.loadView = function (item) {
             $scope.contentTemplate = item.template;
         };
+        $scope.loadRegister = function () {
+            $scope.contentTemplate = "AngularApp/app/register/register.tpl.html"
+        }
         $scope.loadLogin = function () {
             $scope.contentTemplate = "AngularApp/app/login/login.tpl.html"
         }

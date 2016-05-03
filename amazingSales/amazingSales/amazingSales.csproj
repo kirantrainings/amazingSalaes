@@ -269,6 +269,8 @@
     <Content Include="AngularApp\app\main\mainCtrl.js" />
     <Content Include="AngularApp\app\main\navbar.tpl.html" />
     <Content Include="AngularApp\app\register\register.js" />
+    <Content Include="AngularApp\app\register\register.tpl.html" />
+    <Content Include="AngularApp\app\register\registerCtrl.js" />
     <Content Include="AngularApp\app\sections\apparels.tpl.html" />
     <Content Include="AngularApp\app\sections\appliance.tpl.html" />
     <Content Include="AngularApp\app\sections\gadgets.tpl.html" />
@@ -328,6 +330,7 @@
     <Content Include="AngularApp\content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="AngularApp\content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="AngularApp\content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="AngularApp\app\data\countries.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

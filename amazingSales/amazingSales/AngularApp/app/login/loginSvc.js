@@ -5,7 +5,7 @@
             var dfd = $q.defer();
             $http.post("api/Login", userDetails)
                  .then(function (response) {
-                     if(response.status==200 && response.statusText=="OK" && response.data.isAuthenticated)
+                     if(response.status==200 && response.statusText=="OK" && response.data.IsAuthenticated)
                      {
                          dfd.resolve(response.data)
                      }
@@ -20,6 +20,6 @@
         }
     };
     angular.module('amazingSales.login')
-           .service("loginSVc", ["$http","$q", loginSvc]);
+           .service("loginSvc", ["$http","$q", loginSvc]);
 })();
 
