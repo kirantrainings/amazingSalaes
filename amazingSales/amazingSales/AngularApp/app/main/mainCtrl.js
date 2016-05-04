@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    function mainCtrl($scope) {
+    function mainCtrl($scope, $rootScope, authenticateFact) {
         function init() {
             $scope.navigationTemplate = "AngularApp/app/main/navbar.tpl.html";
             $scope.brandName = "eSales";
@@ -11,6 +11,10 @@
               { display: "Gadgets", name: "gadgets", template: "AngularApp/app/sections/gadgets.tpl.html" },
               { display: "Appliances", name: "appliances", template: "AngularApp/app/sections/appliance.tpl.html" }
             ];
+            $scope.userDetails = {
+                firstName: "",
+                lastName:""
+            };
             $scope.loadLogin();
         }
 
@@ -23,10 +27,22 @@
         $scope.loadLogin = function () {
             $scope.contentTemplate = "AngularApp/app/login/login.tpl.html"
         }
+
+        $rootScope.$on("LOGIN_SUCCESS", function (event, args) {
+            console.log(args);
+            // $scope.userDetails = args.userDetails;
+            $scope.userDetails = authenticateFact.getUserInfo();
+            $scope.contentTemplate = $scope.loadView($scope.tabs[0]);
+        });
+
+        $scope.logOut = function () {
+            $scope.userDetails=authenticateFact.logOffUser();
+            $scope.loadLogin();
+        }
         init();
     }
     angular.module("amazingSales")
-           .controller("mainCtrl", ["$scope", mainCtrl])
+           .controller("mainCtrl", ["$scope", "$rootScope", "authenticateFact", mainCtrl])
 
 
 })();

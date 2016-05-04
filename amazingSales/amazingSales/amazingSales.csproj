@@ -254,6 +254,7 @@
   <ItemGroup>
     <Content Include="AngularApp\app\app.js" />
     <Content Include="AngularApp\app\cart\cart.js" />
+    <Content Include="AngularApp\app\common\authenticateFactory.js" />
     <Content Include="AngularApp\app\common\common.js" />
     <Content Include="AngularApp\app\common\productSvc.js" />
     <Content Include="AngularApp\app\gadgets\gadgets.js" />
