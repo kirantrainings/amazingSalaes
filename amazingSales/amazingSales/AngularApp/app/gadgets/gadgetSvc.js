@@ -24,10 +24,11 @@
                 dfd.resolve(myGadgets);
             }
             else {
-                $http.get("api/product")
+                //$http.get("api/product")
+                $http.get("AngularApp/app/data/gadgets.json")
                     .then(function (response) {
                         //positive response
-                        myGadgets = response;
+                        myGadgets = response.data;
                         //Step3
                         dfd.resolve(myGadgets);
 

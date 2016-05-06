@@ -335,6 +335,7 @@
     <Content Include="AngularApp\content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="AngularApp\content\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="AngularApp\app\data\countries.json" />
+    <Content Include="AngularApp\app\data\gadgets.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

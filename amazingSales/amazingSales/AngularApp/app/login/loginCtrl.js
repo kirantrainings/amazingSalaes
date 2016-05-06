@@ -1,6 +1,7 @@
 ﻿(function () {
     'use strict';
-    var loginCtrl = function ($scope, loginSvc, $rootScope,authenticateFact) {
+    var loginCtrl = function ($scope, loginSvc,
+        $rootScope, authenticateFact,$state) {
         function init(){
             $scope.login = {
                 UserName: "",
@@ -15,6 +16,7 @@
                            response.isAuthenticated = true;
                            authenticateFact.setUserInfo(response);
                            $rootScope.$broadcast('LOGIN_SUCCESS', { userDetails: response });
+                           $state.go('home', {userData:response});
                        }
                    })
                    .catch(function (response) {
@@ -25,7 +27,11 @@
         init();
     };
     angular.module('amazingSales.login')
-           .controller("loginCtrl", ["$scope", "loginSvc","$rootScope","authenticateFact",
+           .controller("loginCtrl", ["$scope",
+               "loginSvc",
+               "$rootScope",
+               "authenticateFact",
+               "$state",
                loginCtrl]);
 })();
 

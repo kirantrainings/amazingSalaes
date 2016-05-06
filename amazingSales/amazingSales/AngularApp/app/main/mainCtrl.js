@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    function mainCtrl($scope, $rootScope, authenticateFact) {
+    function mainCtrl($scope, $rootScope, authenticateFact,$state) {
         function init() {
             $scope.navigationTemplate = "AngularApp/app/main/navbar.tpl.html";
             $scope.brandName = "eSales";
@@ -37,12 +37,13 @@
 
         $scope.logOut = function () {
             $scope.userDetails=authenticateFact.logOffUser();
-            $scope.loadLogin();
+            $state.go('login');
         }
         init();
     }
     angular.module("amazingSales")
-           .controller("mainCtrl", ["$scope", "$rootScope", "authenticateFact", mainCtrl])
+           .controller("mainCtrl", ["$scope", "$rootScope",
+               "authenticateFact","$state", mainCtrl])
 
 
 })();

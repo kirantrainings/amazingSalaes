@@ -21,22 +21,28 @@ angular.module("amazingSales")
                //Defining States
                var home = {
                    name: "home",
-                   url:"/home",
+                   url: "/home",
+                   controller:"homeCtrl",
+                   params:{userData:""},
                    templateUrl:"AngularApp/app/home/home.tpl.html"
+               
                };
                var login = {
                    name: "login",
                    url: "/login",
+                   controller:"loginCtrl",
                    templateUrl: "AngularApp/app/login/login.tpl.html"
                };
                var register = {
                    name: "register",
                    url: "/register",
+                   controller:"registerCtrl",
                    templateUrl: "AngularApp/app/register/register.tpl.html"
                };
                var gadgets = {
                    name: "gadgets",
                    url: "/gadgets",
+                   controller:"gadgetsCtrl",
                    templateUrl: "AngularApp/app/gadgets/gadgets.tpl.html"
                };
                
