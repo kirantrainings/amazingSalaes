@@ -274,12 +274,14 @@
     <Content Include="AngularApp\app\register\registerCtrl.js" />
     <Content Include="AngularApp\app\sections\apparels.tpl.html" />
     <Content Include="AngularApp\app\sections\appliance.tpl.html" />
+    <Content Include="AngularApp\app\gadgets\gadgets.tpl.html" />
     <Content Include="AngularApp\app\sections\gadgets.tpl.html" />
     <Content Include="AngularApp\content\css\bootstrap-theme.css" />
     <Content Include="AngularApp\content\css\bootstrap-theme.min.css" />
     <Content Include="AngularApp\content\css\bootstrap.css" />
     <Content Include="AngularApp\content\css\bootstrap.min.css" />
     <Content Include="AngularApp\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="AngularApp\vendor\angular-ui-router.js" />
     <Content Include="AngularApp\vendor\angular.min.js" />
     <Content Include="AngularApp\vendor\bootstrap.js" />
     <Content Include="AngularApp\vendor\jquery-2.2.0.js" />
@@ -297,6 +299,7 @@
     <Content Include="img\image4.jpg" />
     <Content Include="img\image5.jpg" />
     <Content Include="index.html" />
+    <Content Include="IndexWithRouter.html" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />

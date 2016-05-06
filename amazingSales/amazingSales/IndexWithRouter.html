@@ -11,10 +11,13 @@
     <script src="AngularApp/vendor/angular-ui-router.js"></script>
 </head>
 <body>
+    <!--loading the state into the view-->
     <div class="contanier" ng-controller="mainCtrl">
         <div ng-include="navigationTemplate"></div>
-        <div ng-include="contentTemplate"></div>
+        <div ui-view></div>
     </div>
+     
+
     <script src="AngularApp/app/common/common.js"></script>
     <script src="AngularApp/app/common/authenticateFactory.js"></script>
     <script src="AngularApp/app/common/productSvc.js"></script>
@@ -35,9 +38,9 @@
 
     <script src="AngularApp/app/register/register.js"></script>
 
-    <script src="AngularApp/app/register/registerCtrl.js"></script> 
-    
-     <script src="AngularApp/app/app.js"></script>
+    <script src="AngularApp/app/register/registerCtrl.js"></script>
+
+    <script src="AngularApp/app/app.js"></script>
     <script src="AngularApp/app/main/mainCtrl.js"></script>
 </body>
 </html>
