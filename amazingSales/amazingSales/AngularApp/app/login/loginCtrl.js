@@ -23,6 +23,8 @@
                        console.log(response);
                    });
         };
+        $scope.pageTitle = "Login";
+        $scope.pageContent = "I am the login page content";
 
         init();
     };

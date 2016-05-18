@@ -256,6 +256,14 @@
     <Content Include="AngularApp\app\cart\cart.js" />
     <Content Include="AngularApp\app\common\authenticateFactory.js" />
     <Content Include="AngularApp\app\common\common.js" />
+    <Content Include="AngularApp\app\common\customDatePicker.js" />
+    <Content Include="AngularApp\app\common\customLogo.js" />
+    <Content Include="AngularApp\app\common\customLogoImg.js" />
+    <Content Include="AngularApp\app\common\customPanel\customPanel.js" />
+    <Content Include="AngularApp\app\common\customPanel\custompanel.tpl.html" />
+    <Content Include="AngularApp\app\common\customPanel\customTogglePanel.js" />
+    <Content Include="AngularApp\app\common\isolatedDirective.js" />
+    <Content Include="AngularApp\app\common\phoneFilter.js" />
     <Content Include="AngularApp\app\common\productSvc.js" />
     <Content Include="AngularApp\app\gadgets\gadgets.js" />
     <Content Include="AngularApp\app\gadgets\gadgetsCtrl.js" />
@@ -276,6 +284,7 @@
     <Content Include="AngularApp\app\sections\appliance.tpl.html" />
     <Content Include="AngularApp\app\gadgets\gadgets.tpl.html" />
     <Content Include="AngularApp\app\sections\gadgets.tpl.html" />
+    <Content Include="AngularApp\app\sections\isolated.tpl.html" />
     <Content Include="AngularApp\content\css\bootstrap-theme.css" />
     <Content Include="AngularApp\content\css\bootstrap-theme.min.css" />
     <Content Include="AngularApp\content\css\bootstrap.css" />
@@ -293,6 +302,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="images\1.jpg" />
+    <Content Include="images\logo.jpg" />
     <Content Include="img\image1.jpg" />
     <Content Include="img\image2.jpg" />
     <Content Include="img\image3.jpg" />

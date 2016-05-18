@@ -16,14 +16,7 @@
                        ng-model="registerUser.lastName">
             </div>
         </div>
-        <div class="form-group">
-            <label class="control-label col-xs-2">Phone Number</label>
-            <div class="col-xs-4">
-                <input type="text" class="form-control"
-                       placeholder="Phone Number"
-                       ng-model="registerUser.phoneNumber">
-            </div>
-        </div>
+        
         <div class="form-group">
             <label class="control-label col-xs-2">Email</label>
             <div class="col-xs-4">
@@ -33,11 +26,15 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-xs-2">Age</label>
+            <label class="control-label col-xs-2">DOB</label>
             <div class="col-xs-4">
-                <input type="text" class="form-control"
-                       placeholder="Age"
-                       ng-model="registerUser.age">
+                <input type="text" 
+                       class="form-control"
+                       placeholder="DOB"
+                       custom-date-picker
+                       maxdate="0D"
+                       mindate="-1Y"
+                       ng-model="registerUser.dob">
             </div>
         </div>
         <div class="form-group">
@@ -65,7 +62,16 @@
                         ng-model="selectedCountry"
                         ng-options="country.name for country in countries">
                     <option value="">Please Select</option>
-                </select>{{selectedCountry}}
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2">Phone Number</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control"
+                       placeholder="Phone Number"
+                       ng-model="registerUser.phoneNumber">
+                {{registerUser.phoneNumber|phoneFormatter:selectedCountry.code}}
             </div>
         </div>
         <div class="form-group">

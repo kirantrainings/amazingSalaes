@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <link href="AngularApp/content/css/bootstrap.css" rel="stylesheet" />
     <link href="AngularApp/content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="AngularApp/vendor/jquery-2.2.0.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="AngularApp/vendor/bootstrap.js"></script>
     <script src="AngularApp/vendor/angular.min.js"></script>
     <script src="AngularApp/vendor/angular-ui-router.js"></script>
@@ -14,17 +16,25 @@
     <!--loading the state into the view-->
     <div class="contanier" ng-controller="mainCtrl">
         <div ng-include="navigationTemplate"></div>
-        <div ui-view></div>
+            <div ui-view></div>
     </div>
      
 
     <script src="AngularApp/app/common/common.js"></script>
-    <script src="AngularApp/app/common/authenticateFactory.js"></script>
+    <script src="AngularApp/app/common/customLogo.js"></script>
+    <script src="AngularApp/app/common/customPanel/customPanel.js"></script>
+    <script src="AngularApp/app/common/customPanel/customTogglePanel.js"></script>
+
+    <script src="AngularApp/app/common/isolatedDirective.js"></script>
+    <script src="AngularApp/app/common/customLogoImg.js"></script>
+     <script src="AngularApp/app/common/authenticateFactory.js"></script>
     <script src="AngularApp/app/common/productSvc.js"></script>
     <script src="AngularApp/app/gadgets/gadgets.js"></script>
     <script src="AngularApp/app/gadgets/gadgetSvc.js"></script>
     <script src="AngularApp/app/gadgets/gadgetsCtrl.js"></script>
     <script src="AngularApp/app/cart/cart.js"></script>
+    <script src="AngularApp/app/common/phoneFilter.js"></script>
+    <script src="AngularApp/app/common/customDatePicker.js"></script>
     <!--home module-->
     <script src="AngularApp/app/home/home.js"></script>
     <script src="AngularApp/app/home/homeCtrl.js"></script>

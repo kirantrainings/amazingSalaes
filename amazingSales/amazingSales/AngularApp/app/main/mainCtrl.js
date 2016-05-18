@@ -4,7 +4,9 @@
     function mainCtrl($scope, $rootScope, authenticateFact,$state) {
         function init() {
             $scope.navigationTemplate = "AngularApp/app/main/navbar.tpl.html";
+
             $scope.brandName = "eSales";
+
             $scope.tabs = [
               { display: "Home", name: "home", template: "AngularApp/app/home/home.tpl.html" },
               { display: "Apparels", name: "apparels",template:"AngularApp/app/sections/apparels.tpl.html" },
